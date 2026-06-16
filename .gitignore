@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+.DS_Store
+.env
+.env.*
+*.log
+.repoctx/packs/
+examples/**/AGENTS.md
+examples/**/CLAUDE.md
+examples/**/llms.txt
+examples/**/.repoctx/
+examples/**/.cursor/
+examples/**/.github/copilot-instructions.md

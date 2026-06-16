@@ -1,0 +1,6 @@
+examples/
+tests/
+scripts/check-syntax.mjs
+.github/
+.gitignore
+*.zip

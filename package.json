@@ -1,0 +1,64 @@
+{
+  "name": "agentctx-skill",
+  "version": "0.1.0",
+  "description": "AgentCtx skill: make repositories ready for Claude Code, Codex, Gemini CLI, Antigravity, Copilot, Cursor, Windsurf, Amp, Aider, Cline, Roo Code, Continue, OpenHands, Replit Agent, and generic AI coding agents.",
+  "type": "module",
+  "bin": {
+    "agentctx": "skills/agentctx/scripts/agentctx.mjs"
+  },
+  "files": [
+    "skills/",
+    "install/",
+    "README.md",
+    "LICENSE",
+    "skills.sh.json",
+    "PUBLISHING.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:scripts": "node scripts/check-syntax.mjs",
+    "smoke": "node skills/agentctx/scripts/agentctx.mjs scan --root examples/nextjs-app && node skills/agentctx/scripts/agentctx.mjs generate --root examples/nextjs-app --dry-run && node skills/agentctx/scripts/agentctx.mjs doctor --root examples/nextjs-app && node skills/agentctx/scripts/agentctx.mjs pack \"add login with Google OAuth\" --root examples/nextjs-app --stdout",
+    "validate": "npm run check:scripts && npm test && npm run smoke",
+    "pack:dry-run": "npm pack --dry-run",
+    "publish:check": "npm run validate && npm run pack:dry-run"
+  },
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "vercel-skills",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "copilot",
+    "cursor",
+    "gemini-cli",
+    "antigravity",
+    "windsurf",
+    "amp",
+    "aider",
+    "cline",
+    "roo-code",
+    "continue",
+    "openhands",
+    "replit-agent",
+    "agents-md",
+    "repo-context",
+    "developer-tools"
+  ],
+  "author": "Rahul Kolekar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulkolekardev/agentctx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahulkolekardev/agentctx/issues"
+  },
+  "homepage": "https://github.com/rahulkolekardev/agentctx#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

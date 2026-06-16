@@ -1,0 +1,26 @@
+{
+  "name": "nextjs-agentctx-example",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "vitest run",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "next": "^15.0.0",
+    "next-auth": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "stripe": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prisma": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  }
+}
